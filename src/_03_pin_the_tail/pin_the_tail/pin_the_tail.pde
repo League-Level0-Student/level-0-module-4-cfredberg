@@ -23,8 +23,6 @@ int y;
 boolean hasWon = false;
 void draw() {
   background (255, 0, 0);
-  rect(0, 0, 30, 30);
-  rect(430, 250, 40, 40);
   if (mousePressed){
     x = mouseX;
     y = mouseY;
@@ -46,4 +44,7 @@ void draw() {
     background (donkey);
   }
   image(tail, x, y);
+  if (mouseX > 0 && mouseX < 30 && mouseY > 0 && mouseY < 30){
+    background (donkey);
+  }
 }
