@@ -29,8 +29,10 @@ public class ChangeCalculator {
 		// Calculate how much money the user has and save it in a double variable 
 		Double nickelTotal = 0.05 * nickelInt;
 		Double dimeTotal = 0.10 * dimesInt;
+		Double quarterTotal = 0.25 * quartersInt;
 		// Tell the user how much money they have
-
+		Double total = nickelTotal + dimeTotal + quarterTotal;
+		JOptionPane.showMessageDialog(null, "You have $" + total);
 	}
 }
 
